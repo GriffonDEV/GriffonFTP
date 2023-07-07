@@ -10,9 +10,9 @@ namespace SubirFTP.Logica
             String result;
             if(prm_user == "steam")
             {
-                string host = "190.70.140.6";
+                string host = "";
                 string username = "steam";
-                string password = "Arma3Gfn";
+                string password = "";
                 var client = new SshClient(host, username, password);
                 try
                 {
@@ -31,9 +31,9 @@ namespace SubirFTP.Logica
             }
             else if(prm_user == "root")
             {
-                string host = "190.70.140.6";
+                string host = "";
                 string username = "root";
-                string password = "37R664PTNU%";
+                string password = "";
                 var client = new SshClient(host, username, password);
                 try
                 {
@@ -53,9 +53,9 @@ namespace SubirFTP.Logica
 
             if (prm_user == "ts3")
             {
-                string host = "190.70.140.6";
+                string host = "";
                 string username = "ts3";
-                string password = "ts3";
+                string password = "";
                 var client = new SshClient(host, username, password);
                 try
                 {
@@ -84,9 +84,9 @@ namespace SubirFTP.Logica
             SshCommand res_txt;
             if (prm_user == "steam")
             {
-                string host = "190.70.140.6";
-                string username = "steam";
-                string password = "Arma3Gfn";
+                string host = "";
+                string username = "";
+                string password = "";
                 var client = new SshClient(host, username, password);
                 try
                 {
@@ -105,9 +105,9 @@ namespace SubirFTP.Logica
             }
             else if (prm_user == "root")
             {
-                string host = "190.70.140.6";
+                string host = "";
                 string username = "root";
-                string password = "37R664PTNU%";
+                string password = "%";
                 var client = new SshClient(host, username, password);
                 try
                 {
@@ -132,9 +132,9 @@ namespace SubirFTP.Logica
             SshCommand res_txt;
             if (prm_user == "steam")
             {
-                string host = "190.70.140.6";
+                string host = "";
                 string username = "steam";
-                string password = "Arma3Gfn";
+                string password = "";
                 var client = new SshClient(host, username, password);
                 try
                 {
@@ -154,9 +154,9 @@ namespace SubirFTP.Logica
             }
             else if (prm_user == "root")
             {
-                string host = "190.70.140.6";
-                string username = "root";
-                string password = "37R664PTNU%";
+                string host = "";
+                string username = "";
+                string password = "";
                 var client = new SshClient(host, username, password);
                 try
                 {

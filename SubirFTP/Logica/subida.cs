@@ -7,9 +7,9 @@ namespace SubirFTP.Logica
     {
         public  String subirPBO(FileInfo prmFileinfo)
         {
-            string host = "190.70.140.6";
-            string username = "steam";
-            string password = "Arma3Gfn";
+            string host = "";
+            string username = "";
+            string password = "";
 
             string uploadfile = prmFileinfo.FullName;
             Console.WriteLine(prmFileinfo.Name);
@@ -39,9 +39,9 @@ namespace SubirFTP.Logica
 
         public String subirSSH(FileInfo prmFileinfo)
         {
-            string host = "190.70.140.6";
+            string host = "";
             string username = "steam";
-            string password = "Arma3Gfn";
+            string password = "";
 
             string uploadfile = prmFileinfo.FullName;
             Console.WriteLine(prmFileinfo.Name);

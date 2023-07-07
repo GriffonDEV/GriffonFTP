@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SubirFTP</id>
+    <version>1.0.0</version>
+    <authors>SubirFTP</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="SSH.NET" version="2020.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="E:\Proyectos\Null Co\Griffon\SubirFTP\SubirFTP\bin\Debug\net6.0-windows\SubirFTP.runtimeconfig.json" target="lib\net6.0-windows7.0\SubirFTP.runtimeconfig.json" />
+    <file src="E:\Proyectos\Null Co\Griffon\SubirFTP\SubirFTP\bin\Debug\net6.0-windows\SubirFTP.dll" target="lib\net6.0-windows7.0\SubirFTP.dll" />
+  </files>
+</package>

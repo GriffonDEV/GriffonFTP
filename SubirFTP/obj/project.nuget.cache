@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/2UxKoVXe4AMxLkJTdFsUB53v0VyITMlcPDrFJzyU3c/1sacROlWNyWZZz9XpcSPbZ2L02SdKAtk0RkrRmboXA==",
+  "success": true,
+  "projectFilePath": "F:\\Proyectos\\Null Co\\Griffon\\SubirFTP\\SubirFTP\\SubirFTP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Viper\\.nuget\\packages\\ssh.net\\2020.0.2\\ssh.net.2020.0.2.nupkg.sha512",
+    "C:\\Users\\Viper\\.nuget\\packages\\sshnet.security.cryptography\\1.3.0\\sshnet.security.cryptography.1.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

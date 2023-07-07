@@ -1,0 +1,7 @@
+C:\Users\Viper\Downloads\Paquete\SubirFTP.exe
+C:\Users\Viper\Downloads\Paquete\SubirFTP.dll
+C:\Users\Viper\Downloads\Paquete\SubirFTP.deps.json
+C:\Users\Viper\Downloads\Paquete\SubirFTP.runtimeconfig.json
+C:\Users\Viper\Downloads\Paquete\SubirFTP.pdb
+C:\Users\Viper\Downloads\Paquete\Renci.SshNet.dll
+C:\Users\Viper\Downloads\Paquete\SshNet.Security.Cryptography.dll

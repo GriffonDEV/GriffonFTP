@@ -46,14 +46,14 @@ namespace SubirFTP.Pantallas
             {
                 message = "No hay archivos seleccionados";
 
-                message =var_Subida.subirSSH(File);
+                message = var_Subida.subirSSH(File);
                 MessageBox.Show(message, null, buttons);
             }
             else
             {
-                MessageBox.Show(message,null,buttons);
+                MessageBox.Show(message, null, buttons);
             }
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -113,7 +113,7 @@ namespace SubirFTP.Pantallas
             {
                 message = "No hay archivos seleccionados";
                 message = var_comandos.comSSH("root", "reboot");
-                
+
                 MessageBox.Show(message, null, buttons);
             }
             else

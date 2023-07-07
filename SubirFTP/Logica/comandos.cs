@@ -63,6 +63,7 @@ namespace SubirFTP.Logica
                     res_txt = client.RunCommand(prm_ssh);
                     client.Disconnect();
                     client.Dispose();
+
                     return res_txt.Result;
 
                 }

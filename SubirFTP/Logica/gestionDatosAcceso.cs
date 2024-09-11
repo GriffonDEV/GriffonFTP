@@ -11,7 +11,7 @@ namespace SubirFTP.Logica
     {
         public void escribirTXT(datosConexion prmCredenciales)
         {
-            string path = "D:\\datosAcceso.txt";
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "datosAcceso.txt");
 
             // Check if file already exists. If yes, delete it.     
             if (File.Exists(path))
@@ -24,9 +24,18 @@ namespace SubirFTP.Logica
             {
                 //Pass the filepath and filename to the StreamWriter Constructor
                 StreamWriter sw = new StreamWriter(path, false);
-                sw.WriteLine(cifradoCadena(prmCredenciales.getUsuario()));
+                sw.WriteLine(cifradoCadena(prmCredenciales.getRoot()));
                 sw.WriteLine(cifradoCadena(prmCredenciales.getPassword()));
                 sw.WriteLine(cifradoCadena(prmCredenciales.getHost()));
+                sw.WriteLine(cifradoCadena(prmCredenciales.getPuerto()));
+
+                // Escribir la lista de credenciales
+                foreach (datosConexion.Credenciales cred in prmCredenciales.ListaCredenciales)
+                {
+                    sw.WriteLine(cifradoCadena(cred.Usuario));
+                    sw.WriteLine(cifradoCadena(cred.Contrasena));
+                }
+
                 sw.Close();
             }
             catch (Exception e)
@@ -41,16 +50,26 @@ namespace SubirFTP.Logica
 
         public datosConexion leerTXT()
         {
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "datosAcceso.txt");
             datosConexion var_credenciales = new datosConexion();
             try
             {
                 //Pass the file path and file name to the StreamReader constructor
-                StreamReader sr = new StreamReader("D:\\datosAcceso.txt");
-                //Read the first line of text
-                var_credenciales.setUsuario(desecriptarCadena(sr.ReadLine()));
+                StreamReader sr = new StreamReader(path);
+                //Read the first lines of text
+                var_credenciales.setRoot(desecriptarCadena(sr.ReadLine()));
                 var_credenciales.setPassword(desecriptarCadena(sr.ReadLine()));
                 var_credenciales.setHost(desecriptarCadena(sr.ReadLine()));
-                //Continue to read until you reach end of file
+                var_credenciales.setPuerto(desecriptarCadena(sr.ReadLine()));
+
+                // Leer la lista de credenciales
+                while (!sr.EndOfStream)
+                {
+                    string usuario = desecriptarCadena(sr.ReadLine());
+                    string contrasena = desecriptarCadena(sr.ReadLine());
+                    var_credenciales.ListaCredenciales.Add(new datosConexion.Credenciales(usuario, contrasena));
+                }
+
                 //close the file
                 sr.Close();
                 return var_credenciales;
@@ -65,6 +84,8 @@ namespace SubirFTP.Logica
                 Console.WriteLine("Datos recuperados");
             }
         }
+
+
 
         public string cifradoCadena(string prmCadena)
         {
@@ -81,6 +102,17 @@ namespace SubirFTP.Logica
             //result = System.Text.Encoding.Unicode.GetString(decryted, 0, decryted.ToArray().Length);
             result = System.Text.Encoding.Unicode.GetString(decryted);
             return result;
+        }
+        public bool validarCredenciales()
+        {
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "datosAcceso.txt");
+
+            if (!File.Exists(path))
+            {
+                return false;
+            }
+            return true;
+
         }
     }
 }

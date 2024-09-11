@@ -18,3 +18,26 @@ E:\Proyectos\Null Co\Griffon\SubirFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP
 E:\Proyectos\Null Co\Griffon\SubirFTP\SubirFTP\obj\Debug\net6.0-windows\ref\SubirFTP.dll
 E:\Proyectos\Null Co\Griffon\SubirFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.pdb
 E:\Proyectos\Null Co\Griffon\SubirFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.genruntimeconfig.cache
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\bin\Debug\net6.0-windows\SubirFTP.exe
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\bin\Debug\net6.0-windows\SubirFTP.deps.json
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\bin\Debug\net6.0-windows\SubirFTP.runtimeconfig.json
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\bin\Debug\net6.0-windows\SubirFTP.dll
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\bin\Debug\net6.0-windows\SubirFTP.pdb
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\bin\Debug\net6.0-windows\Renci.SshNet.dll
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\bin\Debug\net6.0-windows\SshNet.Security.Cryptography.dll
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.csproj.AssemblyReference.cache
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.Pantallas.MenuPrincipal.resources
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.Pantallas.UsuarioSSH.resources
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.Properties.Resources.resources
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.csproj.GenerateResource.cache
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.GeneratedMSBuildEditorConfig.editorconfig
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.AssemblyInfoInputs.cache
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.AssemblyInfo.cs
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.csproj.CoreCompileInputs.cache
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.sourcelink.json
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.csproj.Up2Date
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.dll
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\refint\SubirFTP.dll
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.pdb
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\SubirFTP.genruntimeconfig.cache
+F:\Proyectos\Griffon\GriffonFTP\SubirFTP\obj\Debug\net6.0-windows\ref\SubirFTP.dll

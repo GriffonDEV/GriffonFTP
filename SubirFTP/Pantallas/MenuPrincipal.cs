@@ -17,9 +17,18 @@ namespace SubirFTP.Pantallas
         FileInfo File;
         subida var_Subida = new subida();
         comandos var_comandos = new comandos();
+        gestionDatosAcceso gestionDatosAcceso = new gestionDatosAcceso();
         public MenuPrincipal()
         {
-            InitializeComponent();
+            if (gestionDatosAcceso.validarCredenciales())
+            {
+                InitializeComponent();
+            }
+            else
+            {
+                new UsuarioSSH().Show();
+            }
+
         }
 
         private void tabMapa_Click(object sender, EventArgs e)
@@ -45,8 +54,8 @@ namespace SubirFTP.Pantallas
             if (File != null)
             {
                 message = "No hay archivos seleccionados";
-
-                message = var_Subida.subirSSH(File);
+                message = var_Subida.subirPBO(File);
+                txtBox.AppendText(message);
                 MessageBox.Show(message, null, buttons);
             }
             else
@@ -112,7 +121,7 @@ namespace SubirFTP.Pantallas
             if (File != null)
             {
                 message = "No hay archivos seleccionados";
-                message = var_comandos.comSSH("root", "reboot");
+                message = var_Subida.subirSSH(File);
 
                 MessageBox.Show(message, null, buttons);
             }
@@ -125,13 +134,14 @@ namespace SubirFTP.Pantallas
         private void btnRestart_Click(object sender, EventArgs e)
         {
             string message = "";
-            message = var_Subida.subirPBO(File);
+            message = var_comandos.comSSH("root", "reboot");
             txtBox.AppendText(message);
         }
 
         private void btnStartArma_Click(object sender, EventArgs e)
         {
             string message = "";
+            txtBox.AppendText("Iniciando servidor de Arma 3");
             message = var_comandos.comSSH("steam", "./arma.sh");
             txtBox.AppendText(message);
         }
@@ -140,6 +150,27 @@ namespace SubirFTP.Pantallas
         {
             string message = "";
             message = var_comandos.comSSH("ts3", "./ts3server st");
+            txtBox.AppendText(message);
+        }
+
+        private void btnConfig_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnArma3Basic_Click(object sender, EventArgs e)
+        {
+            string message = "";
+            txtBox.AppendText("Iniciando servidor de Arma 3");
+            message = var_comandos.comSSH("steam", "./basicos.sh");
+            txtBox.AppendText(message);
+        }
+
+        private void btnArmaCampa_Click(object sender, EventArgs e)
+        {
+            string message = "";
+            txtBox.AppendText("Iniciando servidor de Arma 3");
+            message = var_comandos.comSSH("steam", "./campaña.sh");
             txtBox.AppendText(message);
         }
     }

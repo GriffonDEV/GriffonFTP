@@ -7,9 +7,9 @@ namespace SubirFTP.Logica
     {
         public  String subirPBO(FileInfo prmFileinfo)
         {
-            string host = "";
-            string username = "";
-            string password = "";
+            string host = "arma.griffoncol.great-site.net";
+            string username = "steam";
+            string password = "Arma3Gfn";
 
             string uploadfile = prmFileinfo.FullName;
             Console.WriteLine(prmFileinfo.Name);
@@ -23,7 +23,7 @@ namespace SubirFTP.Logica
                 var fileStream = new FileStream(uploadfile, FileMode.Open);
                         //If you have a folder located at sftp://ftp.example.com/share
                         //then you can add this like:
-                        client.UploadFile(fileStream, "/home/steam/Steam/arma3gfn/mpmissions/" + prmFileinfo.Name, null);
+                        client.UploadFile(fileStream, "/home/steam/arma3gfn/mpmissions/" + prmFileinfo.Name, null);
                         client.Disconnect();
                         client.Dispose();
                         return "Subido.";
@@ -39,9 +39,9 @@ namespace SubirFTP.Logica
 
         public String subirSSH(FileInfo prmFileinfo)
         {
-            string host = "";
+            string host = "arma.griffoncol.great-site.net";
             string username = "steam";
-            string password = "";
+            string password = "Arma3Gfn";
 
             string uploadfile = prmFileinfo.FullName;
             Console.WriteLine(prmFileinfo.Name);
@@ -55,7 +55,7 @@ namespace SubirFTP.Logica
                 var fileStream = new FileStream(uploadfile, FileMode.Open);
                 //If you have a folder located at sftp://ftp.example.com/share
                 //then you can add this like:
-                client.UploadFile(fileStream, "/home/steam/Steam/arma3gfn/" + prmFileinfo.Name, null);
+                client.UploadFile(fileStream, "/home/steam/arma3gfn/" + prmFileinfo.Name, null);
                 client.Disconnect();
                 client.Dispose();
                 return "Subido.";

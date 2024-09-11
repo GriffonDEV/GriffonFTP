@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SubirFTP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bd95581f826cf11e12cc32c0f3d39c44883c238")]
 [assembly: System.Reflection.AssemblyProductAttribute("SubirFTP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SubirFTP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

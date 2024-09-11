@@ -4,7 +4,9 @@
     <id>SubirFTP</id>
     <version>1.0.0</version>
     <authors>SubirFTP</authors>
+    <icon>Griffon.png</icon>
     <description>Package Description</description>
+    <repository type="git" commit="8bd95581f826cf11e12cc32c0f3d39c44883c238" />
     <dependencies>
       <group targetFramework="net6.0-windows7.0">
         <dependency id="SSH.NET" version="2020.0.2" exclude="Build,Analyzers" />
@@ -17,7 +19,8 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="E:\Proyectos\Null Co\Griffon\SubirFTP\SubirFTP\bin\Debug\net6.0-windows\SubirFTP.runtimeconfig.json" target="lib\net6.0-windows7.0\SubirFTP.runtimeconfig.json" />
-    <file src="E:\Proyectos\Null Co\Griffon\SubirFTP\SubirFTP\bin\Debug\net6.0-windows\SubirFTP.dll" target="lib\net6.0-windows7.0\SubirFTP.dll" />
+    <file src="F:\Proyectos\Griffon\GriffonFTP\SubirFTP\bin\Debug\net6.0-windows\SubirFTP.runtimeconfig.json" target="lib\net6.0-windows7.0\SubirFTP.runtimeconfig.json" />
+    <file src="F:\Proyectos\Griffon\GriffonFTP\SubirFTP\bin\Debug\net6.0-windows\SubirFTP.dll" target="lib\net6.0-windows7.0\SubirFTP.dll" />
+    <file src="C:\Users\Viper\iCloudDrive\Documents\Griffon\Logos\Logos\Griffon.png" target="\Griffon.png" />
   </files>
 </package>

@@ -32,14 +32,14 @@
             txtUsuario = new TextBox();
             label2 = new Label();
             panel1 = new Panel();
-            label3 = new Label();
-            txtPass = new TextBox();
-            txt = new TextBox();
-            label4 = new Label();
-            textBox4 = new TextBox();
-            label5 = new Label();
-            btnRegistrar = new Button();
             btnLimpiar = new Button();
+            btnRegistrar = new Button();
+            label5 = new Label();
+            txtPuerto = new TextBox();
+            label4 = new Label();
+            txtHost = new TextBox();
+            txtPass = new TextBox();
+            label3 = new Label();
             dropRegistrados = new DomainUpDown();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -78,9 +78,9 @@
             panel1.Controls.Add(btnLimpiar);
             panel1.Controls.Add(btnRegistrar);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(textBox4);
+            panel1.Controls.Add(txtPuerto);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(txt);
+            panel1.Controls.Add(txtHost);
             panel1.Controls.Add(txtPass);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
@@ -90,49 +90,24 @@
             panel1.Size = new Size(360, 192);
             panel1.TabIndex = 9;
             // 
-            // label3
+            // btnLimpiar
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(39, 50);
-            label3.Name = "label3";
-            label3.Size = new Size(92, 21);
-            label3.TabIndex = 9;
-            label3.Text = "Contraseña:";
+            btnLimpiar.Location = new Point(282, 162);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(75, 23);
+            btnLimpiar.TabIndex = 16;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = true;
             // 
-            // txtPass
+            // btnRegistrar
             // 
-            txtPass.Location = new Point(161, 48);
-            txtPass.Name = "txtPass";
-            txtPass.PasswordChar = '*';
-            txtPass.Size = new Size(155, 23);
-            txtPass.TabIndex = 10;
-            // 
-            // txt
-            // 
-            txt.Location = new Point(161, 77);
-            txt.Name = "txt";
-            txt.PlaceholderText = "127.0.0.1";
-            txt.Size = new Size(155, 23);
-            txt.TabIndex = 11;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(39, 79);
-            label4.Name = "label4";
-            label4.Size = new Size(26, 21);
-            label4.TabIndex = 12;
-            label4.Text = "IP:";
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(161, 106);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "22";
-            textBox4.Size = new Size(155, 23);
-            textBox4.TabIndex = 13;
+            btnRegistrar.Location = new Point(0, 162);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(75, 23);
+            btnRegistrar.TabIndex = 15;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
             // label5
             // 
@@ -144,23 +119,49 @@
             label5.TabIndex = 14;
             label5.Text = "Puerto:";
             // 
-            // btnRegistrar
+            // txtPuerto
             // 
-            btnRegistrar.Location = new Point(0, 162);
-            btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(75, 23);
-            btnRegistrar.TabIndex = 15;
-            btnRegistrar.Text = "Registrar";
-            btnRegistrar.UseVisualStyleBackColor = true;
+            txtPuerto.Location = new Point(161, 106);
+            txtPuerto.Name = "txtPuerto";
+            txtPuerto.PlaceholderText = "22";
+            txtPuerto.Size = new Size(155, 23);
+            txtPuerto.TabIndex = 13;
             // 
-            // btnLimpiar
+            // label4
             // 
-            btnLimpiar.Location = new Point(282, 162);
-            btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(75, 23);
-            btnLimpiar.TabIndex = 16;
-            btnLimpiar.Text = "Limpiar";
-            btnLimpiar.UseVisualStyleBackColor = true;
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(39, 79);
+            label4.Name = "label4";
+            label4.Size = new Size(26, 21);
+            label4.TabIndex = 12;
+            label4.Text = "IP:";
+            // 
+            // txtHost
+            // 
+            txtHost.Location = new Point(161, 77);
+            txtHost.Name = "txtHost";
+            txtHost.PlaceholderText = "127.0.0.1";
+            txtHost.Size = new Size(155, 23);
+            txtHost.TabIndex = 11;
+            // 
+            // txtPass
+            // 
+            txtPass.Location = new Point(161, 48);
+            txtPass.Name = "txtPass";
+            txtPass.PasswordChar = '*';
+            txtPass.Size = new Size(155, 23);
+            txtPass.TabIndex = 10;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(39, 50);
+            label3.Name = "label3";
+            label3.Size = new Size(92, 21);
+            label3.TabIndex = 9;
+            label3.Text = "Contraseña:";
             // 
             // dropRegistrados
             // 
@@ -195,9 +196,9 @@
         private Button btnLimpiar;
         private Button btnRegistrar;
         private Label label5;
-        private TextBox textBox4;
+        private TextBox txtPuerto;
         private Label label4;
-        private TextBox txt;
+        private TextBox txtHost;
         private TextBox txtPass;
         private Label label3;
         private DomainUpDown dropRegistrados;

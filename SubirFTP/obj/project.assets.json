@@ -110,11 +110,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Proyectos\\Null Co\\Griffon\\SubirFTP\\SubirFTP\\SubirFTP.csproj",
+      "projectUniqueName": "F:\\Proyectos\\Griffon\\GriffonFTP\\SubirFTP\\SubirFTP.csproj",
       "projectName": "SubirFTP",
-      "projectPath": "F:\\Proyectos\\Null Co\\Griffon\\SubirFTP\\SubirFTP\\SubirFTP.csproj",
+      "projectPath": "F:\\Proyectos\\Griffon\\GriffonFTP\\SubirFTP\\SubirFTP.csproj",
       "packagesPath": "C:\\Users\\Viper\\.nuget\\packages\\",
-      "outputPath": "F:\\Proyectos\\Null Co\\Griffon\\SubirFTP\\SubirFTP\\obj\\",
+      "outputPath": "F:\\Proyectos\\Griffon\\GriffonFTP\\SubirFTP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Viper\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -137,6 +137,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -167,7 +172,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
